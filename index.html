@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Read and update content attributes accordingly  -->
+
+    <meta
+      name="description"
+      content="Welcome to my portfolio website. I am a front-end web developer and I specialize in creating user-friendly, responsive and accessible websites. Explore my projects, open-source work and contact me for any inquiries or collaborations."
+    />
+
+    <!-- Google / Search Engine Tags -->
+<meta itemprop="name" content="Rakan Yusra's Portfolio">
+<meta itemprop="description" content="Welcome to my portfolio website. I am a front-end web developer and I specialize in creating user-friendly, responsive and accessible websites. Explore my projects, open-source work and contact me for any inquiries or collaborations.">
+
+<!-- Reference screenshot of updated site's header in place of content -->
+<meta itemprop="image" content="assets/images/sharing-card.png">
+
+<!-- Facebook Meta Tags -->
+<meta property="og:url" content="https://ossportfolio.netlify.app">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Rakann Yusra's Portfolio">
+<meta property="og:description" content="Welcome to my portfolio website. I am a front-end web developer and I specialize in creating user-friendly, responsive and accessible websites. Explore my projects, open-source work and contact me for any inquiries or collaborations.">
+
+<!-- Reference screenshot of updated site's header in content -->
+<meta property="og:image" content="assets/images/sharing-card.png">
+
+<!-- Twitter Meta Tags -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Rakan Yusra's Portfolio">
+<meta name="twitter:description" content="Welcome to my portfolio website. I am a front-end web developer and I specialize in creating user-friendly, responsive and accessible websites. Explore my projects, open-source work and contact me for any inquiries or collaborations.">
+
+<!-- Reference screenshot of updated site's header in content -->
+<meta name="twitter:image" content="assets/images/sharing-card.png">
+
+
+<!-- Update favicon href attribute with image of yourself -->
+    <link
+      rel="shortcut icon"
+      href="assets/images/favicons.png"
+      type="image/png"
+    />
+
+    <!-- Preloading fonts for better performance -->
+
+    <link
+      rel="preload"
+      href="assets/fonts/Mona-Sans.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+
+    <link rel="stylesheet" href="style.css"  />
+    <script src="script.js" defer></script>
+
+    <!-- Your name here -->
+    <title>Muhammad Rakan Yusra's Portfolio</title>
+  </head>
+
+  <body>
+
+    <script>
+      const theme = localStorage.getItem("theme") || "dark";
+      document.body.classList.add(theme);
+    </script>
+
+    <header class="header">
+
+      <div class="menu-btn-container">
+        <div class="container">
+          <button type="button"  class="menu-btn">menu</button>
+        </div>
+      </div>
+
+      <nav class="nav hidden">
+        <ol class="nav-items">
+          <li class="nav-item"><a href="#">Home</a></li>
+          <li class="nav-item"><a href="#work">My Work</a></li>
+        </ol>
+      </nav>
+
+      <div class="container">
+        <div class="header-textbox">
+          <!-- Replace with your name and job title -->
+          <h1 class="h1">
+            <span>Hi, I'm Muhammad Rakan Yusra</span>
+          </h1>
+
+          <!-- Add a small introductory paragraph about yourself -->
+          <p class="header-text">
+            An Undergraduate in Software Engineering at Telkom University.
+            I have worked as a Videographer and
+            Video editor with experience in creative business applications.
+            I am skilled in Filmmaking, Video Editing, Project Editing and Motion Graphics.
+          </p>
+
+          <div class="header-btns">
+            <a href="#work" class="btn btn-secondary">See my work</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+
+      <section class="work">
+        <div class="container">
+          <h2 class="h2" id="work">Selected Work</h2>
+          <div class="work-boxes">
+            <div class="work-box">
+              <div class="work-textbox">
+                <!-- Add your project title here -->
+                <h3 class="h3">3D Design</h3>
+                
+                <!-- Add small description of your project  -->
+                <p class="work-text">
+                  A bit of 3D Modelling, Rendering, and Animation I did a while back on Blender.
+                </p>
+                <ol class="work-technologies">
+                  <li>Blender</li>
+                  <li>After Effects</li>
+                  <li>Womp</li>
+                </ol>
+                <div class="work-links">
+                  <!-- Add url of project in href attribute -->
+                  <a href="https://www.canva.com/design/DAGHRJgSpKs/53zkH8qa2Lt11Cr7niDpSA/view?utm_content=DAGHRJgSpKs&utm_campaign=designshare&utm_medium=link&utm_source=editor" target="_blank" rel="noopener" class="link"
+                    >Open portfolio in canva</a>
+                </div>
+              </div>
+
+         <!-- Update img src and alt attribute  -->
+
+              <picture class="work-img">
+                <img
+                  loading="lazy"
+                  src="assets/images/work/1.png"
+                  alt="agency elevation"
+                />
+              </picture>
+            </div>
+            <div class="work-box">
+              <div class="work-textbox">
+                <!-- Add your project title here -->
+                <h3 class="h3">Drawing</h3>
+                <!-- Add small description of your project  -->
+
+                <p class="work-text">Some Drawings I did outside of Academic Activity. Some tools i used</p>
+                <ol class="work-technologies">
+                  <li>Photoshop</li>
+                  <li>Clip Studio</li>
+                  <li>Illustrator</li>
+                </ol>
+                <div class="work-links">
+                  <!-- Add url of project in href attribute -->
+                  <a href="https://www.canva.com/design/DAGHRJgSpKs/53zkH8qa2Lt11Cr7niDpSA/view?utm_content=DAGHRJgSpKs&utm_campaign=designshare&utm_medium=link&utm_source=editor" target="_blank" rel="noopener" class="link"
+                    >Open portfolio in canva</a>
+                </div>
+              </div>
+              
+              <picture class="work-img">
+                <img
+                  loading="lazy"
+                  src="assets/images/work/3.png"
+                  alt="agency elevation"
+                />
+              </picture>
+            </div>
+            <div class="work-box">
+              <div class="work-textbox">
+                <!-- Add your project title here -->
+                <h3 class="h3">Logo & UI/UX Design</h3>
+                <!-- Add small description of your project  -->
+
+                <p class="work-text">Designs made for Design Thinking Class.</p>
+               
+                <div class="work-links">
+                  <!-- Add url of project in href attribute -->
+                  <a href="https://www.canva.com/design/DAGHRJgSpKs/53zkH8qa2Lt11Cr7niDpSA/view?utm_content=DAGHRJgSpKs&utm_campaign=designshare&utm_medium=link&utm_source=editor" target="_blank" rel="noopener" class="link"
+                    >Open portfolio in canva</a>
+                </div>
+              </div>
+         <!-- Update img src and alt attribute  -->
+              <picture class="work-img">
+                <img
+                  loading="lazy"
+                  src="assets/images/work/2.png"
+                  alt="portfolio template"
+                />
+              </picture>
+            </div>
+            <div class="work-box">
+              <div class="work-textbox">
+                <!-- Add your project title here -->
+                <h3 class="h3">Packaging & Poster Design</h3>
+                <!-- Add small description of your project  -->
+                <p class="work-text">
+                  Designs made for Sertifcate Exam Back in Vocational High School.
+                </p>  
+                <div class="work-links">
+                  <!-- Add url of project in href attribute -->
+                  <a href="https://www.canva.com/design/DAGHRJgSpKs/53zkH8qa2Lt11Cr7niDpSA/view?utm_content=DAGHRJgSpKs&utm_campaign=designshare&utm_medium=link&utm_source=editor" target="_blank" rel="noopener" class="link"
+                    >Open portfolio in canva</a>
+                </div>
+              </div>
+         <!-- Update img src and alt attribute  -->
+              <picture class="work-img">
+                <img
+                  loading="lazy"
+                  src="assets/images/work/4.png"
+                  alt="contribute dev"
+                />
+              </picture>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <!-- Update href and src attributes -->
+          <nav>
+            <ol class="footer-links">
+              <li class="footer-link">
+                <a title="GitHub" href="https://github.com/rakunberacun" target="_blank" rel="noopener"
+                  ><img
+                    loading="lazy"
+                    src="assets/images/social-links/github.svg"
+                    alt="GitHub"
+                /></a>
+              </li>
+              <li class="footer-link">
+                <a title="Linkedin" href="https://www.linkedin.com/in/muhammad-rakan-yusra/" target="_blank" rel="noopener"
+                  ><img
+                    loading="lazy"
+                    src="assets/images/social-links/linkedin.svg"
+                    alt="Linkedin"
+                /></a>
+              </li>
+            </ol>
+          </nav>
+          <p class="footer-text">
+            &copy; <span>2024</span>   Template designed by <a target="_blank" rel="noopener" href="https://github.com/rakunberacun">Rakan Yusra.</a>
+          </p>
+          <label class="theme-switch" for="theme-switch">
+            <span>Dark Theme</span>
+            <input type="checkbox" id="theme-switch" role="switch"/>
+          </label>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
